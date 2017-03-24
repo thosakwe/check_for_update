@@ -1,6 +1,6 @@
 # check_for_update
 
-[![version 1.0.0](https://img.shields.io/badge/pub-1.0.0-brightgreen.svg)](https://pub.dartlang.org/packages/check_for_update)
+[![version 1.0.1](https://img.shields.io/badge/pub-1.0.1-brightgreen.svg)](https://pub.dartlang.org/packages/check_for_update)
 
 Generates Dart code to automatically check for a new version of the current package. Your project should depend on `http`. The output code is platform-independent.
 
@@ -20,6 +20,12 @@ import 'package:check_for_update/builder.dart';
 final PhaseGroup phaseGroup = new PhaseGroup.singleAction(
     new CheckForUpdateBuilder(),
     new InputSet('example', const ['pubspec.yaml']));
+```
+
+You can add the output to a subdirectory, i.e. `lib`:
+
+```dart
+new CheckForUpdateBuilder(subDirectory: 'lib')
 ```
 
 ## Overrides

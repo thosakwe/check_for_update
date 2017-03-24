@@ -2,7 +2,7 @@ author: "Tobe O <thosakwe@gmail.com>"
 description: "Generates Dart code to automatically check for a new version of the current package."
 homepage: "https://github.com/thosakwe/check_for_update.git"
 name: "check_for_update"
-version: "1.0.0"
+version: "1.0.1"
 environment:
   sdk: ">=1.19.0"
 dependencies: 
